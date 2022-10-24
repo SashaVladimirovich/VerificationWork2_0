@@ -19,5 +19,19 @@ string PrintText(string[] text)
 { 
     return  String.Join(' ', text); 
 } 
+string DelWord(string[] text) 
+{ 
+    string newText = string.Empty; 
+    for (int index = 0; index < text.Length; index++) 
+    { 
+        string newWord = text[index]; 
+        if (newWord.Length <= 3) 
+        { 
+            newText += newWord + " "; 
+        } 
+ 
+    } 
+    return newText; 
+} 
 
 
