@@ -15,3 +15,9 @@ string[] FillText(string[] text, int wordCount)
     } 
     return text; 
 } 
+string PrintText(string[] text) 
+{ 
+    return  String.Join(' ', text); 
+} 
+
+
